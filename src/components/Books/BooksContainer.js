@@ -20,9 +20,7 @@ class BooksContainer extends Component {
           <SingleBook Title={Title} Author={Author} />
         </ul>
         <div className="horizontal-divider" />
-        <section>
-          <BookForm />
-        </section>
+        <BookForm />
       </div>
     );
   }
