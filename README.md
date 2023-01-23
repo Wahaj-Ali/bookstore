@@ -24,6 +24,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+      - [🔭 Future Features ](#-future-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
@@ -87,6 +88,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Future Features -->
+
+#### 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Use redux in React**
+- [ ] **Connect to API**
+- [ ] **App Stling**
 
 
 <!-- LIVE DEMO -->
