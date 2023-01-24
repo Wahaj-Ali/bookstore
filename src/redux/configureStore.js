@@ -6,7 +6,7 @@ import catergoryReducer from './categories/categories';
 
 const reducer = combineReducers({
   books: bookReducer,
-  category: catergoryReducer,
+  categories: catergoryReducer,
 });
 
 // create store
