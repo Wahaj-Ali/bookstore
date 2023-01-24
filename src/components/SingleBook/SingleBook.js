@@ -9,7 +9,7 @@ const SingleBook = (props) => {
     <li>
       <div className="book">
         <div className="book-content">
-          <h2 className="book-title">{Id}</h2>
+          {/* <h2 className="book-title">{Id}</h2> */}
           <div className="book-info">
             <h2 className="book-title">{Title}</h2>
             <h2 className="book-author">{Author}</h2>

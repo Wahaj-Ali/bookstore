@@ -26,7 +26,7 @@ const bookReducer = (state = defaultState, action) => {
   switch (action.type) {
     case ADD_BOOKS:
       return {
-        books: [...state, action.newBook],
+        books: [...state.books, action.newBook],
       };
     case REMOVE_BOOKS:
       return {
