@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 import {
   BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
@@ -6,6 +7,7 @@ import './App.css';
 import BooksContainer from './components/Books/BooksContainer';
 import Categories from './components/Categories/Categories';
 import Navbar from './components/Navbar/Navbar';
+import store from './redux/configureStore';
 
 class App extends Component {
   constructor(props) {
@@ -16,13 +18,15 @@ class App extends Component {
   render() {
     return (
       <>
-        <Router basename={process.env.PUBLIC_URL}>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={(<BooksContainer />)} />
-            <Route path="/Categories" element={(<Categories />)} />
-          </Routes>
-        </Router>
+        <Provider store={store}>
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={(<BooksContainer />)} />
+              <Route path="/Categories" element={(<Categories />)} />
+            </Routes>
+          </Router>
+        </Provider>
       </>
     );
   }

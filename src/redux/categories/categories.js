@@ -15,7 +15,8 @@ const catergoryReducer = (state = defaultState, action) => {
   switch (action.type) {
     case STATUS_CHK:
       return {
-        categories: [...state, 'Under Construction'],
+        ...state,
+        categories: [...state.categories, 'Under Construction'],
       };
     default:
       return state;

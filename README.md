@@ -1,12 +1,12 @@
 <a name="readme-top"></a>
-<div align="center">
+<!-- <div align="center">
 
   <img src="/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse</b></h3>
 
-</div>
+</div> -->
 <div align="left">
   <h1>The Bookstore CMS</h1>
 
