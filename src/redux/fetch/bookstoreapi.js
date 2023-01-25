@@ -41,16 +41,6 @@ export const removeBookAPI = createAsyncThunk(REMOVE_BOOK_API, async (id, thunkA
   return thunkAPI.dispatch(getAllBooks());
 });
 
-// const bookstoreapi = createSlice({
-//   name: 'booksRedcuer',
-//   initialState: [],
-//   extraReducers(builder) {
-//     builder.addCase(getAllBooks.fulfilled, (state, action) => {
-//       state.books = action.payload;
-//     });
-//   },
-// });
-
 const bookstoreapi = createSlice({
   name: 'booksRedcuer',
   initialState,
