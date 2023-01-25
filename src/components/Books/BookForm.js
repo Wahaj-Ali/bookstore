@@ -2,20 +2,22 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import './BooksContainer.css';
-import { addBook } from '../../redux/books/books';
+import { addBookAPI } from '../../redux/fetch/bookstoreapi';
 
 const BookForm = () => {
   const [state, setState] = useState({
-    Id: '',
-    Title: '',
-    Author: '',
+    item_id: '',
+    title: '',
+    author: '',
+    category: '',
   });
 
   const onChangeHandler = (event) => {
     setState({
       ...state,
-      Id: nanoid(),
+      item_id: nanoid(),
       [event.target.name]: event.target.value,
+      category: 'Category Action',
     });
   };
 
@@ -23,11 +25,12 @@ const BookForm = () => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    dispatch(addBook(state));
+    dispatch(addBookAPI(state));
     setState({
-      Id: '',
-      Title: '',
-      Author: '',
+      item_id: '',
+      title: '',
+      author: '',
+      category: 'Category Action',
     });
   };
 
@@ -36,8 +39,8 @@ const BookForm = () => {
       <h2 className="form-title">Add Your Book</h2>
       <section>
         <form className="Add-form" onSubmit={onSubmitHandler}>
-          <input className="input title-input" type="text" name="Title" placeholder="Add Book Title" onChange={onChangeHandler} />
-          <input className="input" type="text" name="Author" placeholder="Add Book Author" onChange={onChangeHandler} />
+          <input className="input title-input" type="text" name="title" placeholder="Add Book Title" required value={state.title} onChange={onChangeHandler} />
+          <input className="input" type="text" name="author" placeholder="Add Book Author" required value={state.author} onChange={onChangeHandler} />
           <button className="primary-button-big" type="submit">ADD BOOK</button>
         </form>
       </section>

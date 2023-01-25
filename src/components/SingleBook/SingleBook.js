@@ -2,15 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './SingleBook.css';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/books';
+import { removeBookAPI } from '../../redux/fetch/bookstoreapi';
 
 const SingleBook = (props) => {
-  const { Title, Author, Id } = props;
+  const {
+    Title, Author, Id,
+  } = props;
 
   const dispatch = useDispatch();
 
   const onClickHandler = () => {
-    dispatch(removeBook(Id));
+    dispatch(removeBookAPI(Id));
   };
 
   return (
@@ -34,6 +36,7 @@ SingleBook.propTypes = {
   Title: PropTypes.string.isRequired,
   Author: PropTypes.string.isRequired,
   Id: PropTypes.string.isRequired,
+  // Category: PropTypes.string.isRequired,
 };
 
 export default SingleBook;
