@@ -1,11 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import bookReducer from './books/books';
 import catergoryReducer from './categories/categories';
-
+import bookstoreapi from './fetch/bookstoreapi';
 // combine reducers
 
 const reducer = combineReducers({
-  books: bookReducer,
+  books: bookstoreapi,
   categories: catergoryReducer,
 });
 
