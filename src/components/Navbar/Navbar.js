@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import person from './person.png';
 import Header from '../Header/Header';
 import './Navbar.css';
 
@@ -14,7 +15,9 @@ const Navbar = () => (
         <Link to="/Categories">CATEGORIES</Link>
       </li>
     </ul>
-    <button type="button">Person</button>
+    <button type="button" className="icon-button">
+      <img className="icon" src={person} alt="person" />
+    </button>
   </nav>
 );
 
