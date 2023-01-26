@@ -17,7 +17,7 @@ const BookForm = () => {
       ...state,
       item_id: nanoid(),
       [event.target.name]: event.target.value,
-      category: 'Category Action',
+      category: 'Action',
     });
   };
 
@@ -30,7 +30,7 @@ const BookForm = () => {
       item_id: '',
       title: '',
       author: '',
-      category: 'Category Action',
+      category: `${state.category}`,
     });
   };
 
