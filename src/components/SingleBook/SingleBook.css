@@ -71,7 +71,7 @@
 }
 
 .circular-progress {
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   width: 4.25rem;
   height: 4.25rem;
@@ -158,9 +158,7 @@
   .book-content {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    overflow: hidden;
-    padding: 25px;
+    padding: 10px;
     text-align: center;
   }
 
@@ -170,5 +168,9 @@
 
   .progress-container {
     flex-direction: column;
+  }
+
+  .progress-divider {
+    display: none;
   }
 }

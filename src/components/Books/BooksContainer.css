@@ -12,6 +12,9 @@
   flex-direction: column;
   grid-gap: 0.938rem;
   gap: 0.938rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 40vh;
 }
 
 .horizontal-divider {
@@ -80,5 +83,9 @@
 
   .primary-button-big {
     width: auto;
+  }
+
+  .books {
+    height: 65vh;
   }
 }
