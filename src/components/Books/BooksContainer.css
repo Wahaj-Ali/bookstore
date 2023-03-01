@@ -67,3 +67,18 @@
   font-weight: 700;
   font-family: "Roboto Slab", serif;
 }
+
+@media only screen and (max-width: 768px) {
+  .books-container {
+    overflow: hidden;
+  }
+
+  .Add-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .primary-button-big {
+    width: auto;
+  }
+}

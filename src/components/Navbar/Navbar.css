@@ -47,3 +47,14 @@
 .icon {
   width: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .navBar {
+    padding: 10px 20px;
+  }
+
+}

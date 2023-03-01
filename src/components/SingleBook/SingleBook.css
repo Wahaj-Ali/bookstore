@@ -152,3 +152,23 @@
   font-size: 0.875rem;
   opacity: 0.5;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .book-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .book {
+    overflow: hidden;
+  }
+
+  .progress-container {
+    flex-direction: column;
+  }
+}
