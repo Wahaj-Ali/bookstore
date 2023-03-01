@@ -88,4 +88,8 @@
   .books {
     height: 65vh;
   }
+
+  .horizontal-divider {
+    margin: 0.8rem 0 0.813rem;
+  }
 }

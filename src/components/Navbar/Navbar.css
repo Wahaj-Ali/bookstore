@@ -50,7 +50,23 @@
 
 @media only screen and (max-width: 768px) {
   .links {
-    display: none;
+    display: flex;
+    position: fixed;
+    rotate: deg(91);
+    transform: rotate(90deg);
+    top: 35%;
+    right: 66%;
+  }
+
+  .link {
+    background: antiquewhite;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 2px 4px;
+  }
+
+  .link a { 
+    opacity: 1;
   }
 
   .navBar {
