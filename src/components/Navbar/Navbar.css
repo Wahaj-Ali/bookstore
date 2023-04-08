@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.link a:hover {
+  opacity: 1;   
+}
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
