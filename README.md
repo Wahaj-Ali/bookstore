@@ -41,6 +41,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 The Bookstore CMS <a name="about-project"></a>
+![smartmockups_likhkewb](https://github.com/Wahaj-Ali/bookstore/assets/111431787/223f4016-2977-42d2-a9f5-f17c13f03b9c)
 
 >The "Bookstore" is a React-based SPA that allows you to: Display a list of books, Add a book, and Remove a selected book.
 
